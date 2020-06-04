@@ -5,10 +5,26 @@
 </template>
 
 <script>
+import storage from './storage/index.js'
 export default {
   name: 'App',
   components: {
      
+  },
+  data() {
+    return {
+
+    }
+  },
+
+  mounted() {
+    // storage.setItem('a',1);
+    // storage.setItem('user',{"name":"WhiteM","age":12});
+    storage.setItem("sex",1,"user");
+  },
+
+  methods() {
+
   }
 }
 </script>
